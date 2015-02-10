@@ -14,4 +14,4 @@ Injects backdoor.java into target.jar. May prove useful in MitM attacks. This ha
 If the backdoor is a persistant function (such as a shell listening on a socket), make sure to spin it off into it's own thread or the main app will never execute. Tool assumes javac is in your path and you can read/write/create to a tmp dir in the running location. Some .jar files don't seem to play nicely when unzipping. Notable example of this is the free version of Burp1.6 (although the pro version worked fine).
 
 ##Future Improvements
-Looking into directly modifying JBE for inserting backdoor. This should reduce overall runtime. Unzipping .jar is a major timesink.
+Looking into directly modifying Java Bytecode for inserting backdoor. This should reduce overall runtime. Unzipping .jar is a major timesink.
