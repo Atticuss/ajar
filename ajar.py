@@ -30,7 +30,7 @@ def main(argv):
             for e in sys.exc_info():
                 print(e)
     elif help != 1:
-        print('USAGE:\tajar.py -b <backdoor.java> -j <target.jar> [-o <outfile.jar>]')
+        print('USAGE:\tajar.py -b <backdoor.java> -t <target.jar> [-o <outfile.jar>]')
 
 def createZip(src, dst):
     zf = zipfile.ZipFile("%s" % (dst), "w")
