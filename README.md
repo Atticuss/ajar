@@ -3,7 +3,7 @@ ajar.py
 
 ```ajar.py -b <backdoor.java> -t <target.jar> [-o <outfile.jar>]```
 
-Injects backdoor.java into target.jar. This happens by:
+Injects backdoor.java into target.jar. May prove useful in MitM attacks. This happens by:
   1. Unzipping target.jar to ./tmp/
   2. Parsing manifest for Main-Class value
   3. Changing Main-Class to the backdoor
