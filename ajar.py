@@ -26,6 +26,7 @@ def main(argv):
         try:
             start()
         except:
+            shutil.rmtree('tmp/')
             print('[!] An error ocurred:\n')
             for e in sys.exc_info():
                 print(e)
