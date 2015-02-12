@@ -87,7 +87,8 @@ def start():
     print("[*] Provided backdoor successfully modified")
 
     print("[*] Compiling modified backdoor...")
-    if subprocess.call("javac -cp tmp/ tmp/%s" % backdoor, shell=True) != 0:
+    #if subprocess.call("javac -cp tmp/ tmp/%s" % backdoor, shell=True) != 0:
+    if subprocess.call(['javac','-cp','tmp/','tmp/%s'%backdoor],shell=False) != 0:
         print("[!] Error compiling %s" % backdoor)
     print("[*] Compiled modified backdoor")
                 
